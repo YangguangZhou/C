@@ -20,8 +20,8 @@ void addEdge(int u,int v,int w){
 void dfs(int u){
     for(int i=0;i=G[u].size();i++){
         int v=G[u][i].to,w=G[u][i].w;
-        if(!vis[u]){
-            vis[u]=1;
+        if(!vis[v]){
+            vis[v]=1;
             dfs(v);
         }
     }
